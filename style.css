@@ -1,3 +1,5 @@
+
+
 body {
 	margin: 0;
 }
@@ -24,7 +26,9 @@ body {
 	background-size: contain;
 	background-repeat: no-repeat;
 	display: flex;
-	margin-left: 1000px;
+	position: absolute;
+	top: 10vh;
+	left: 155vh;
 	margin-bottom: 350px;
 	animation-name: moveSky;
 	animation-duration: 20s;
@@ -195,7 +199,7 @@ body {
 }
 
 .flower3 {
-	background: url('https://imgur.com/FXcypua');
+	background: url('https://i.imgur.com/FXcypua.png');
 	width: 114px;
 	height: 200px;
 	background-size: contain;
@@ -277,15 +281,31 @@ body {
 @keyframes moveSky {
 
 	0% { 
-		transform:translateX(0);
-	}
+		transform: translateX(0);
+	 }
 
 	50% {
-		transform:translateX(-1500px);
-	}
+		transform: translateX(-1500px);
+		opacity: 1;
+	 }
+
+	 51% { 
+	 	opacity:0;
+
+	 }
+
+	  52% { 
+	 	opacity:-100;
+
+	 }
+
+	  53% { 
+	 	opacity:1;
+	 }
+
 
 	100% {
-		transform:translateX(0);
+		transform: translateX(40px);
 	}
 } 
 
